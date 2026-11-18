@@ -1,0 +1,14 @@
+Iteration 4.3 validation
+
+- Python backend compileall: OK
+- JavaScript syntax check (node --check): OK
+- Vue <script setup> syntax check: OK
+- Buttons without explicit type: 0
+- Auth getter uses reactive Pinia state: YES
+- Login submit button explicit type=submit: YES
+- Theme toggle on login: YES
+- Shared theme module: YES
+- Marketing English labels removed from frontend: YES
+- Existing backend / bracket algorithms changed: NO
+
+Note: full browser E2E and Django test suite were not executed in this container because project runtime dependencies/browser environment are not installed here.

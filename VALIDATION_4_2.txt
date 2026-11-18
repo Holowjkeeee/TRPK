@@ -1,0 +1,7 @@
+Iteration 4.2 static validation
+- Backend Python compileall: OK
+- Frontend JavaScript syntax (node --check): OK
+- Match action label: "Внести результат"
+- Category selector: grouped dropdown, no horizontal category strip in template
+- Theme: light/dark toggle persisted in localStorage
+- npm/vite full build: not run in container because npm dependencies are not cached and registry access is unavailable

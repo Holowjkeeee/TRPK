@@ -1,0 +1,17 @@
+Iteration 4.1 validation
+
+Static checks performed in the build environment:
+- Python source compilation: OK (`python -m compileall backend`)
+- JavaScript syntax check for `.js` files: OK (`node --check`)
+- old cyclic per-match mat assignment removed
+- Category has persistent `mat_number`
+- API serializer exposes Category.mat_number
+- categories and bracket views display the assigned mat
+- migration 0005 migrates existing categories/matches to category-level mat assignment
+- tests added for category mat integrity and age-group distribution
+
+Full Django test runner was not executed in the build environment because Django/DRF dependencies are not installed there. Run locally after `run_all.bat`:
+
+cd backend
+.\.venv\Scripts\Activate.ps1
+python manage.py test
